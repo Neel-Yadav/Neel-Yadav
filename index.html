@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firebase Google Login</title>
   
-    <script src="./firebase.js" type="module" defer>
-  </script>
+  <script src="./firebase.js" type="module" defer></script>
   
   <!-- Firebase SDK -->
 </head>
@@ -16,6 +15,14 @@
   <h1>Login with Google</h1>
   <button id="login-btn">Login with Google</button>
   <button id="logout-btn" style="display:none;">Logout</button>
+
+  <!-- User Details Section -->
+  <div id="user-details" style="display:none;">
+    <h2>User Details</h2>
+    <p><strong>Name:</strong> <span id="user-name"></span></p>
+    <p><strong>Email:</strong> <span id="user-email"></span></p>
+    <img id="user-photo" alt="User Photo" style="width: 100px; height: 100px; border-radius: 50%;" />
+  </div>
 </body>
 
-</html> 
+</html>
